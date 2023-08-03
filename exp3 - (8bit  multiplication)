@@ -1,0 +1,8 @@
+MVI A,00
+MVI B,06
+MVI C,06
+Loop: ADD B
+DCR C
+JNZ Loop
+STA 2000
+HLT
