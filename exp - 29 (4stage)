@@ -1,0 +1,54 @@
+#include<stdio.h>
+
+int main()
+
+{
+	int n1,n2,c=1,ch,res,ins;
+	float perf,res1;
+
+	printf("\nenter the num1:");
+	scanf("%d",&n1);
+	c++;
+
+	printf("\nenter the num2:");
+	scanf("%d",&n2);
+	c++;
+
+	printf("\n1.add\n2.sub\n3.mul\n4.div\n");
+
+	printf("\nenter the choice:");
+	scanf("%d",&ch);
+
+	switch(ch)
+	{
+		case 1:
+			printf("\nperform addition");
+			res=n1+n2;
+			c++;
+			break;
+		case 2:
+			printf("\nperform subraction");
+			res=n1-n2;
+			c++;
+			break;
+		case 3:
+			printf("\nperform multiply");
+			res=n1*n2;
+			c++;
+			break;
+		case 4:
+			printf("\nperform division:");
+			res1=n1/n2;
+			c++;
+			break;
+		default:
+			printf("invalid");
+	}
+	
+	printf("\nenter the no of instruction:");
+	scanf("%d",&ins);
+	
+	perf=ins/c;
+	
+	printf("\nperformance measure is %f",perf);
+}
